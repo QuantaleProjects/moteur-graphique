@@ -23,17 +23,6 @@ def supprimer():
 
 dernier = time.time()
 
-def circle(pos,r):
-    for y in range(0,largeur):
-        for x in range(0,longueur):
-            if (x-pos[0])**2+(y-pos[1])**2<r**2:
-                placerPixel(x,y,'#')
-
-def circle2(pos,r):
-    for y in range(0,largeur):
-        for x in range(0,longueur):
-            if abs((x-pos[0])**2+(y-pos[1])**2-r**2)<r:
-                placerPixel(x,y,'@')
 while True:
     actuelle = time.time()
     dt=actuelle-dernier
